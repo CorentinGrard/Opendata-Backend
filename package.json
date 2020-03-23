@@ -6,7 +6,7 @@
   "author": "corentin.grard@ibm.com",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.mines-ales.fr/opendata-fibre/backend-opendata.git"
+    "url": "https://gitlab.mines-ales.fr/opendata-fibre/backend-opendata-nodejs.git"
   },
   "license": "MIT",
   "scripts": {
