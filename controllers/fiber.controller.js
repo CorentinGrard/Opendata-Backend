@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-// const FiberService = require('../services/fiber.service');
+const FiberService = require('../services/fiber.service');
 
 // routes
 router.get('/:y/:x', getNearLocation);
@@ -8,7 +8,7 @@ router.get('/:y/:x', getNearLocation);
 module.exports = router;
 
 function getNearLocation(req, res, next) {
-  GSMService.near({
+  FiberService.near({
       x: req.params.x,
       y: req.params.y
     })
