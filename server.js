@@ -33,3 +33,5 @@ const port = process.env.NODE_ENV === 'production' ? (process.env.PORT || 80) : 
 const server = app.listen(port, function () {
     winston.info('Server listening on port ' + port);
 });
+
+module.exports = server
