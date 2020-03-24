@@ -16,7 +16,7 @@ async function near({
           coordinates: [x, y]
         },
         $minDistance: 0,
-        $maxDistance: 20000
+        $maxDistance: 2000
       }
     }
   })
