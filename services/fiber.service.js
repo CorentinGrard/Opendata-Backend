@@ -1,5 +1,5 @@
 const db = require('../_helpers/db');
-const GSM = db.GSM;
+const Fiber = db.Fiber;
 
 module.exports = {
   near,
@@ -8,7 +8,7 @@ async function near({
   x,
   y
 }) {
-  const near = await GSM.find({
+  const near = await Fiber.find({
     geometry: {
       $near: {
         $geometry: {
@@ -16,7 +16,7 @@ async function near({
           coordinates: [x, y]
         },
         $minDistance: 0,
-        $maxDistance: 1500
+        $maxDistance: 400
       }
     }
   }).limit(50)

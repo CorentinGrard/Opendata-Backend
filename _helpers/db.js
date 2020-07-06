@@ -11,4 +11,5 @@ mongoose.Promise = global.Promise;
 
 module.exports = {
     GSM: require('../models/GSM'),
+    Fiber: require('../models/Fiber'),
 };
